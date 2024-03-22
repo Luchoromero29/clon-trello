@@ -75,6 +75,10 @@
   }
 }
 
+html, body, #root, #main-app{
+  height: 100vh;
+}
+
 *{
   margin: 0;
   padding: 0;

@@ -13,7 +13,7 @@ const Aside = () => {
   ];
 
   return (
-    <aside id="aside" className="bg-muted h-screen ">
+    <aside id="aside" className="bg-muted h-full">
       <div id="name" className="flex items-center pl-4 h-20">
         <Avatar>
           <div className="w-full h-full bg-foreground text-background flex items-center justify-center font-medium text-xl">

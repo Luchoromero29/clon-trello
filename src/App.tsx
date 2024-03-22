@@ -3,6 +3,7 @@ import Board from "./components/Board";
 import Header from "./components/Header";
 import { Separator } from "./components/ui/separator";
 
+
 function App() {
   const board = {
     id: "1",
@@ -30,22 +31,23 @@ function App() {
   };
 
   return (
-    <>
+    <section className="flex flex-col h-screen overflow-hidden">
       <div id="header" className="w-full">
         <Header />
       </div>
 
-      <main className="flex h-screen w-full">
-        <div className="w-1/3 max-w-72">
+      <main id="main-app" className="flex w-full flex-1 h-full">
+        <div className="w-1/3 max-w-72 ">
           <Aside />
         </div>
         <Separator orientation="vertical" />
 
-        <div id="content" className="w-2/3">
+        <div id="content" className="w-full">
+          
           <Board board={board} />
         </div>
       </main>
-    </>
+    </section>
   );
 }
 
